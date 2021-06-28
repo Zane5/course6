@@ -199,6 +199,9 @@ GEM
       tilt
     semantic_range (3.0.0)
     sexp_processor (4.15.3)
+    simple_form (5.1.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     spring (2.1.1)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
@@ -253,6 +256,7 @@ DEPENDENCIES
   rubocop-rails
   rubocop-rspec
   sass-rails (>= 6)
+  simple_form
   spring
   tailwindcss-rails (~> 0.3.3)
   turbolinks (~> 5)
