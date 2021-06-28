@@ -1,0 +1,23 @@
+%h1 Listing courses
+
+%table.table-auto.border-separate.border.border-green-800
+  %thead
+    %tr
+      %th.border.border-green-600 Title
+      %th.border.border-green-600 Description
+      %th.border.border-green-600
+      %th.border.border-green-600
+      %th.border.border-green-600
+
+  %tbody
+    - @courses.each do |course|
+      %tr.bg-emerald-200
+        %td.border.border-green-600= course.title
+        %td.border.border-green-600= course.description
+        %td.border.border-green-600= link_to 'Show', course
+        %td.border.border-green-600= link_to 'Edit', edit_course_path(course)
+        %td.border.border-green-600= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Course', new_course_path
